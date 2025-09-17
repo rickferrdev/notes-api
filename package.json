@@ -1,0 +1,41 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "description": "Modular RESTful API to manager notes",
+  "homepage": "https://github.com/rickferrdev/notes-api#readme",
+  "bugs": {
+    "url": "https://github.com/rickferrdev/notes-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickferrdev/notes-api.git"
+  },
+  "license": "MIT",
+  "author": "Henr. Ferr <rickferr.dev@gmail.com>",
+  "type": "module",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --exit --bail test/**/*",
+    "start": "node .",
+    "watch": "NODE_ENV=dev nodemon --watch src --exec 'node .'",
+    "lint": "prettier . --write; eslint . --fix"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "globals": "^16.4.0",
+    "mocha": "^11.7.2",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "zod": "^4.1.8"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0"
+  }
+}
